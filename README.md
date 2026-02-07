@@ -51,20 +51,37 @@
 <br>
 
 ## 🛠 주요기능
-### ☑️ 메인 페이지(index.html)
-<img src="https://github.com/user-attachments/assets/a6844914-703f-4948-8620-f052605e7abe"/>
+### ☑️ 메인 페이지-메인비주얼(index.html)
 - HTML5 video 요소를 활용한 메인 비주얼 배경 영상 구현
 - CSS 포지셔닝과 오버레이 구조를 활용한 영상 위 텍스트 레이아웃 설계
 - 메가네비게이션 UI를 JavaScript 이벤트 기반 인터랙션으로 구현
+<img src="https://github.com/user-attachments/assets/a6844914-703f-4948-8620-f052605e7abe"/>
 <br>
-
+### ☑️ 메인 페이지-탭(index.html)
+- 탭 UI를 활용한 소식 카테고리(공지사항, 보도자료, 건설기술 등) 콘텐츠 구분 구조 구현
+- 탭 클릭 시 해당 카테고리 목록이 전환되는 콘텐츠 필터링 인터랙션 구성
+- 우측 프로모션 배너 영역을 통한 주요 행사/이벤트 콘텐츠 강조 배치
+<img src="https://github.com/user-attachments/assets/4c24a3ef-5c10-499d-97b4-73db4515c03e"/>
+<br>
 ### ☑️ FAQ 페이지(sub5.hmtl)
-<img src="https://github.com/user-attachments/assets/2ad028bb-147b-4227-b20d-81957b3e74f5"/>
 - 아코디언 UI를 활용한 질문·답변 토글 인터랙션 구현
 - 페이지네이션 적용으로 다량의 FAQ 콘텐츠 구간 분리
 - 아이콘과 카드형 레이아웃을 활용한 정보 시각 구분 및 가독성 강화
+<img src="https://github.com/user-attachments/assets/2ad028bb-147b-4227-b20d-81957b3e74f5"/>
 <br>
 
+### ☑️ 공지사항 페이지(sub1.html)
+- 공지사항 카테고리 분류 구조를 적용한 정보 정렬 UI 구성
+- 표(Table) 레이아웃을 활용한 게시글 정보 구조화 (번호, 구분, 분야, 제목, 날짜, 조회수)
+- 페이지네이션 적용으로 공지 데이터 구간 분리 및 탐색 편의성 확보
+<img src="https://github.com/user-attachments/assets/11265d60-b844-48e6-aee0-72205c0e1da5"/>
+<br>
+
+### ☑️ 주요성과 페이지(sub3.html)
+- 탭 UI를 활용한 주요연구성과 / 성과집 콘텐츠 유형 구분 구조 구현
+- 썸네일 클릭 시 메인 이미지가 전환되는 콘텐츠 탐색 구조 설계
+- 연구성과 시각 자료 중심 레이아웃을 통한 정보 몰입도 강화
+<img src="https://github.com/user-attachments/assets/05103602-2d7a-4166-925c-6f632b92ea0f"/>
 <br>
 
 ## 🖥 실행 환경
