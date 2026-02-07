@@ -7,7 +7,7 @@
 <br><br>
 
 ## 🔗 Link
-- 💻 [바로가기(web-site)](https://nyg00807-ship-it.github.io/Project01/)
+- 💻 [바로가기(web-site)](https://nyg00807-ship-it.github.io/Project/)
 - 📃 [기획서(google slides)](https://docs.google.com/presentation/d/19cI53_MlMvwLH_7SqMSbr99kMV9pKpC7gjf5AZ8xxOk/edit?usp=sharing)
 - 🎨 [디자인시안(figma)](https://www.figma.com/design/YfIVLhxE17EKAmxtgILrjr/%EA%B8%B0%ED%9A%8D%EC%84%9C-%EC%8B%9C%EC%95%88?node-id=1-5&t=vGY0ZB2B4KjjVllY-1)
 
