@@ -51,10 +51,19 @@
 <br>
 
 ## 🛠 주요기능
-- 탭 버튼 구현
-- 스와이퍼를 활용한 슬라이드 구현
-- 반응형 레이아웃
-- 헤더 스크롤 이벤트 처리
+### ☑️ 메인 페이지(index.html)
+<img src="https://github.com/user-attachments/assets/a6844914-703f-4948-8620-f052605e7abe"/>
+- HTML5 video 요소를 활용한 메인 비주얼 배경 영상 구현
+- CSS 포지셔닝과 오버레이 구조를 활용한 영상 위 텍스트 레이아웃 설계
+- 메가네비게이션 UI를 JavaScript 이벤트 기반 인터랙션으로 구현
+<br>
+
+### ☑️ FAQ 페이지(sub5.hmtl)
+<img src="https://github.com/user-attachments/assets/2ad028bb-147b-4227-b20d-81957b3e74f5"/>
+- 아코디언 UI를 활용한 질문·답변 토글 인터랙션 구현
+- 페이지네이션 적용으로 다량의 FAQ 콘텐츠 구간 분리
+- 아이콘과 카드형 레이아웃을 활용한 정보 시각 구분 및 가독성 강화
+<br>
 
 <br>
 
