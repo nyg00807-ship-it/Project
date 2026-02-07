@@ -1,0 +1,226 @@
+ 
+ /* 히어로 부분 */
+ .hero{
+  position: relative;
+ }
+ .hero-wrap{
+  width: 100%;
+  height: 450px;
+ }
+ .hero-image{
+  position: relative;
+  height: 100%;
+ }
+ .hero-image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+ }
+ .hero-image::after{
+  position: absolute;
+  content: '';
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+ }
+ .hero-text{
+  position: absolute;
+  left: 50%; top: 50%;
+  transform: translate(-50%,0%);
+  z-index: 10;
+ }
+ .Top-icon{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+ }
+ .Top-icon img{
+  margin-right: 5px;
+ }
+ .Top-icon p{
+  position: relative;
+  color: var(--color-white);
+  font-size: 16px;
+  padding: 0 20px;
+  text-shadow: 0 0 10px black;
+ }
+ .Top-icon p::before{
+  content: '';
+  position: absolute;
+  left: 0; top: 0;
+  width: 17px; height: 17px;
+  background: url(/icon/sub_arrow.svg) no-repeat center;
+  background-size: 135%;
+  text-shadow: 0 0 10px black;
+  z-index: 99;
+ }
+ .log-in p{
+  margin-top: 15px;
+  font-family: 'Paperozi';
+  font-size: 45px;
+  font-weight: 600;
+  color: var(--color-white);
+  text-shadow: 0 0 10px black;
+ }
+
+/* 로그인 섹션 */
+button{font-family: 'NanumSquare', sans-serif;}
+.log-tabs{
+  display: none;
+}
+.log-wrap{
+  position: relative;
+  margin-top: 100px;
+  border-radius: 10px;
+  text-align: center;
+  border: 1px solid var(--color-grey);
+  display: flex;
+  justify-content: space-between;
+  padding: 70px 100px;
+}
+.log-wrap::after{
+  position: absolute;
+  content: '';
+  left: 50%; top: 50%;
+  transform: translateY(-50%);
+  height: 90%;
+  border-left: 1px solid var(--color-light-gray);
+}
+.log-member{
+  width: 450px;
+}
+.log-member h3{
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+.log-member input{
+  display: block;
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid var(--color-light-gray);
+}
+.log-member input:first-of-type{
+  margin-bottom: 15px;
+}
+.log-member input::placeholder{
+  font-size: 16px;
+  color: var(--color-grey);
+}
+.log-member input:focus{
+  outline: 1.5px solid var(--color-grey);
+}
+.log-member input[type="checkbox"]{
+  display: inline-block;
+  width: auto;
+  padding: 0; margin: 0;
+}
+.log-member button{
+  margin-top: 26px;
+  border-radius: 50px;
+  background: var(--color-primary);
+  border: none;
+  color: var(--color-white);
+  width: 100%;
+  height: 60px;
+  font-size: 24px;
+  font-weight: 700;
+}
+.log-text{
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.log-text a{
+  position: relative;
+  color: var(--color-black);
+  height: 17px;
+  display: flex;
+  align-items: center;
+  padding-left:20px; 
+}
+.log-text a::after{
+  content: '';
+  position: absolute;
+  left: 0; top: 0;
+  width: 100%; height: 15px;
+  border-left: 1px solid var(--color-black);
+}
+.log-text a:last-of-type{
+  font-weight: 700;
+  color: var(--color-bg-middle-dark);
+  border: none;
+}
+/* .log-text label{
+  height: 17px;
+} */
+.log-text a{
+  line-height: 1;
+}
+.log-text label{
+  line-height: 1;
+}
+.check-box{
+  display: flex;
+  align-items: center;
+}
+.log-nonmember{
+  width: 450px;
+}
+.log-nonmember h3{
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+.log-nonmember p{
+  font-size: 16px;
+}
+.log-nonmember button{
+  margin-top: 15px;
+  border-radius: 50px;
+  background: var(--color-primary);
+  border: none;
+  color: var(--color-white);
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  font-size: 24px;
+  font-weight: 700;
+}
+.log-nonmember p:last-of-type{
+  font-size: 13px;
+  color: var(--color-grey);
+  margin-top: 5px;
+}
+.log-member input[type="checkbox"]{
+  margin-right: 5px;
+}
+/* 하단 박스 섹션 */
+.box-wrap{
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+.box-bg{
+  background: var(--color-bg-light);
+  height: 100px;
+  display: flex;
+}
+.box-bg ul{
+  margin: 0 auto;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.box-bg li{
+  display: flex;
+  align-items: center;
+}
+.box-bg li h4{
+  font-weight: 700;
+  margin-right: 10px;
+}
+.box-bg li img{
+  margin-right: 5px;
+}

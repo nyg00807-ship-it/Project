@@ -1,0 +1,399 @@
+header{height: 450px;}
+ 
+ /* 히어로 부분 */
+ .hero{
+  position: relative;
+ }
+ .hero-wrap{
+  width: 100%;
+  height: 450px;
+ }
+ .hero-image{
+  position: relative;
+  height: 100%;
+ }
+ .hero-image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+ }
+ .hero-image::after{
+  position: absolute;
+  content: '';
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+ }
+ .hero-text{
+  position: absolute;
+  left: 50%; top: 50%;
+  transform: translate(-50%,0%);
+  z-index: 10;
+ }
+ .Top-icon{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+ }
+ .Top-icon img{
+  margin-right: 5px;
+ }
+ .Top-icon p{
+  position: relative;
+  color: var(--color-white);
+  font-size: 16px;
+  padding-left:20px;
+  padding-right: 2px;
+  text-shadow: 0 0 10px black;
+  display: flex;
+  align-items: center;
+  line-height: 1px;
+ }
+ .Top-icon p::before{
+  content: '';
+  position: absolute;
+  left: 0; top: 50%;
+  transform: translateY(-50%);
+  width: 17px; height: 17px;
+  background: url(../icon/sub_arrow.svg) no-repeat center;
+  background-size: 135%;
+  text-shadow: 0 0 10px black;
+ }
+ .log-in p{
+  text-align: center;
+  margin-top: 15px;
+  font-family: 'Paperozi';
+  font-size: 45px;
+  font-weight: 600;
+  color: var(--color-white);
+  text-shadow: 0 0 10px black;
+ }
+ /* 본문 */
+.FAQ{
+  margin-top: 100px;
+  display: flex;
+  gap: 50px;
+  position: relative;
+  z-index: 1;
+}
+/* 참여 아코디언 */
+.participation{
+  flex-shrink: 0;
+  width: 240px; 
+}
+.section-title{
+  font-size: 30px;
+  margin-bottom: 12px;
+  margin-top: 10px;
+}
+.participationAcco-item{
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.participationAcco-title{
+  border-radius: 5px;
+  padding: 17px 20px;
+  line-height: 1;
+  position: relative;
+  border: 1px solid var(--color-light-gray);
+  transition: .3s;
+}
+.participationAcco-title::after{
+  position: absolute;
+  content: '';
+  background: url(../icon/sub_arrow2.svg) no-repeat;
+  background-size: contain;
+  background-position: center;
+  right: 15px; top: 50%;
+  text-align: right;
+  transform: translateY(-50%);
+  width: 15px; height: 15px;
+  transition: .3s;
+}
+.participationAcco-title h4{
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 500;
+}
+.participationAcco-title a{
+  color: var(--color-black);
+}
+.participationAcco-conntent{
+  border-radius: 0 0 5px 5px;
+  max-height: 0;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+  overflow: hidden;
+  padding: 0 20px;
+}
+.participationAcco-conntent a{
+  position: relative;
+  display: block;
+  margin-bottom: 15px;
+  padding-left: 12px;
+  color: var(--color-sub-gray);
+}
+.participationAcco-conntent a::after{
+  position: absolute;
+  content: '';
+  left: 0; top: 50%;
+  width: 5px; height: 5px;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  background: var(--color-light-gray);
+}
+.participationAcco-conntent a:last-of-type{
+  margin: 0;
+}
+.participationAcco-item.active .participationAcco-title{
+  background: var(--color-primary);
+  color: var(--color-white);
+  border: none;
+  border-radius: 5px 5px 0 0;
+  transition: .3s;
+}
+.participationAcco-item.active .participationAcco-title h4{
+  font-weight: 700;
+}
+.participationAcco-item.active .participationAcco-title::after{
+  transform: translateY(-50%) rotate(180deg);
+  filter: brightness(0) saturate(100%) invert(100%) sepia(5%) saturate(774%) hue-rotate(259deg) brightness(119%) contrast(100%);
+}
+.participationAcco-item.active .participationAcco-title a{
+  color: var(--color-white);
+}
+.participationAcco-item.active .participationAcco-conntent{
+  max-height: 1000px;
+  padding: 20px;
+  border: 1px solid var(--color-primary);
+  border-top: none;
+}
+.participationAcco-click.active{
+  color: var(--color-black);
+  font-weight: 600;
+}
+.participationAcco-click.active::after{
+  background: var(--color-primary) !important;
+}
+
+/* 하단 박스 섹션 */
+.box-wrap{
+  position: relative;
+  margin-top: 140px;
+  margin-bottom: 100px;
+}
+.box-wrap::after{
+  position: absolute;
+  content: '';
+  left: 0; top: -55px;
+  width: 100%; height: 1px;
+  background: var(--color-grey);
+}
+.box-bg{
+  background: var(--color-bg-light);
+  display: flex;
+}
+.box-bg ul{
+  margin: 0 auto;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.box-bg:first-of-type ul{
+  margin-top: 50px;
+}
+.box-bg:last-of-type ul{
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+.box-bg li{
+  display: flex;
+  align-items: center;
+}
+.box-bg:first-child ul li:nth-child(2){
+  margin-left: -15px;
+}
+.box-bg li h4{
+  font-weight: 700;
+  margin-right: 10px;
+}
+.box-bg li img{
+  margin-right: 5px;
+}
+
+/* FAQ */
+.FAQ-search-mobile{
+  display: none;
+}
+.FAQ-top{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 3px solid var(--color-bg-middle-dark);
+  padding: 9px 0;
+}
+.FAQ-top h2{
+  font-size: 34px;
+}
+.FAQ-search{
+  display: flex;
+  align-items: flex-end;
+}
+.FAQ-search input{
+  width: 160px; height: 25px;
+  border: 1px solid var(--color-grey);
+}
+.FAQ-search button{
+  background: var(--color-primary);
+  border: none;
+  margin-left: 8px;
+  height: 25px;
+  color: var(--color-white);
+  padding: 0 12px;
+}
+
+/* FAQ 아코디언 */
+.FAQ-accordion{
+  margin-top: 60px;
+}
+.FAQ-accordion-item{
+  position: relative;
+  background: var(--color-bg-light);
+  border-radius: 50px;
+  transition: 0.5s;
+}
+/* .FAQ-accordion-item.active{
+  max-height: 600px; 
+} */
+.FAQ-accordion-item + .FAQ-accordion-item{
+  margin-top: 60px;
+}
+.FAQ-accordion-Hbox{
+  display: flex;
+}
+.FAQ-accordion-header{
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 50px;
+  height: 80px;
+  background: var(--color-white);
+  margin-bottom: -30px; /* 콘텐츠와 겹치게 */
+  z-index: 1;
+}
+
+.FAQ-accordion-header span{
+  position: absolute;
+  top: -15px; left: 10px;
+  background: var(--color-primary);
+  width: 80px; height: 80px;
+  border-radius: 50px 50px 0 50px;
+  color: var(--color-white);
+  font-size: 50px;
+  font-family: 'Paperozi';
+  font-weight: 700;
+  text-align: center;
+  line-height: 75px;
+}
+.FAQ-accordion-header img{
+  margin-right: 30px;
+  width: 30px; height: 30px;
+  object-fit: contain;
+}
+.FAQ-accordion-title{
+  margin-left: 100px;
+}
+.FAQ-accordion-title h4{
+  font-size: 20px;
+  font-weight: 900;
+  margin-bottom: 5px;
+  color: var(--color-bg-middle-dark);
+}
+.FAQ-accordion-title p{
+  font-size: 16px;
+  font-weight: 500;
+  /* color: var(--color-sub-gray); */
+}
+.FAQ-accordion-content{
+  background: transparent; /* 배경 제거 */
+  padding-top: 30px; /* 헤더와의 간격 */
+  max-height: 0;
+  overflow: hidden;
+  transition: .5s;
+}
+.FAQ-accordion-content p{
+  padding: 40px;
+  line-height: 30px;
+}
+
+.FAQ-accordion-item.active .FAQ-accordion-content{
+  max-height: 500px;
+}
+
+/* 페이지네이션 */
+.pagination{
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+}
+.arrow-double-left{
+  cursor: pointer;
+  border: 1px solid var(--color-grey);
+  width: 38px; height: 38px;
+  background: url(../icon/Double_Arrow.svg) no-repeat;
+  background-position: center;
+}
+.arrow-left{
+  cursor: pointer;
+  border: 1px solid  var(--color-grey);
+  width: 38px; height: 38px;
+  background: url(../icon/pagination_arrow.svg) no-repeat;
+  background-position: center;
+  border-left: none;
+}
+#numbers{
+  cursor: pointer;
+  display: flex;
+  margin: 0 6px;
+}
+#numbers li{
+  width: 38px; height: 38px;
+  border: 1px solid  var(--color-grey);
+  text-align: center;
+  line-height: 38px;
+  border-right: none;
+}
+#numbers li:last-of-type{
+  border-right: 1px solid  var(--color-grey);
+}
+#numbers li.active{
+  background: var(--color-primary);
+  border: none;
+}
+#numbers li.active a{
+  color: var(--color-white);
+}
+#numbers li a{
+  color: var(--color-black);
+}
+.arrow-double-right{
+  cursor: pointer;
+  border: 1px solid  var(--color-grey);
+  width: 38px; height: 38px;
+  background: url(../icon/Double_Arrow.svg) no-repeat;
+  background-position: center;
+  transform: rotate(180deg);
+}
+.arrow-right{
+  cursor: pointer;
+  border: 1px solid var(--color-grey);
+  width: 38px; height: 38px;
+  background: url(../icon/pagination_arrow.svg) no-repeat;
+  background-position: center;
+  transform: rotate(180deg);
+  border-left: none;
+}

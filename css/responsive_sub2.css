@@ -1,0 +1,140 @@
+@media screen and (max-width:728px){
+  
+  .hero-wrap{
+    height: 350px;
+    position: relative;
+    width: 100%;
+    border-radius: 0;
+  }
+  .hero .hero-text{
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%,0%);
+  }
+  .hero .hero-text .Top-icon p{
+    font-size: 16px;
+    display: flex;
+    align-self: center;
+    color: var(--color-white);
+    margin: 0;
+    padding: 0 0 0 20px;
+    text-shadow: 0 0 10px black;
+  }
+  .Top-icon img{
+    width: 15px; height: 15px;
+  }
+  .hero .hero-text .log-in p{
+    font-size: 30px !important;
+  }
+  
+    /* 하단 박스 섹션 */
+    .box-wrap{
+    margin-top: 60px;
+    margin-bottom:0
+    }
+    .box-bg ul{
+      width: auto;
+    }
+
+    /* 로그인 섹션 */
+    .log-tabs{
+      display: flex;
+      margin-top: 80px;
+    }
+    .log-tabs button{
+      width: 150px;
+      padding: 12px 0;
+      border: none;
+      background: var(--color-white);
+      color: var(--color-bg-middle-dark);
+      font-size: 20px;
+      font-weight: 900;
+      border-radius: 20px 20px 0 0;
+      border: 3px solid var(--color-primary);
+      border-bottom: none;
+    }
+    .log-tabs button.active{
+      background: var(--color-primary);
+      color: var(--color-white);
+    }
+    .log-wrap{
+      margin-top: 0;
+      border-radius: 0 10px 10px 10px;
+      padding: 30px 25px;
+    }
+    .log-wrap::after {
+        display: none;
+      }
+    .log-member, .log-nonmember{
+      width: 100%;
+      display: none;
+    }
+    .log-member.active, .log-nonmember.active{
+      display: block;
+    }
+    .log-member h3{
+      font-size: 20px;
+    }
+    .log-member input{
+      padding: 18px;
+    }
+    .log-member input:first-of-type{
+      margin-bottom: 12px;
+    }
+    .log-text a{
+      padding-left: 10px;
+    }
+    .log-member button{
+      font-size: 20px;
+      margin-top: 15px;
+      margin-bottom: 20px;
+      height: 45px;
+    }
+    .log-nonmember h3{
+      font-size: 20px;
+    }
+    .log-nonmember button{
+      font-size: 20px;
+      line-height: 45px;
+      margin-top: 12px;
+      height: 45px;
+    }
+    .log-nonmember p{
+      font-size: 14px;
+    }
+    .log-nonmember p:last-of-type{
+      margin-top: 0;
+    }
+    .log-member input[type="checkbox"]{
+      margin:0;
+      margin-right: 5px;
+    }
+}
+@media screen and (max-width:425px){
+  .log-text a{
+     font-size: 13px;
+     padding-left: 10px;
+     line-height: 1;
+   }
+   .log-text label{
+     font-size: 13px;
+     line-height: 13px;
+   }
+   .check-box{
+    display: flex;
+    align-items: center;
+   }
+   .log-member input:first-of-type{
+    margin-right: 5px;
+   }
+}
+@media screen and (max-width:375px){
+   .log-text a{
+      font-size: 12px;
+      padding-left: 5px;
+      line-height: 1;
+    }
+    .log-text label{
+      font-size: 12px;
+    }
+}

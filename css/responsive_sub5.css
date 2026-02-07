@@ -1,0 +1,151 @@
+@media screen and (max-width:728px){
+  header{height: 350px;}
+
+  .hero-wrap{
+    height: 350px;
+    position: relative;
+    width: 100%;
+    border-radius: 0;
+  }
+  .hero .hero-text{
+    width: 100%;
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%,0%);
+  }
+  .hero .hero-text .Top-icon p{
+    font-size: 16px;
+    display: flex;
+    align-self: center;
+    color: var(--color-white);
+    margin: 0;
+    padding: 0 0 0 20px;
+    text-shadow: 0 0 10px black;
+  }
+  .Top-icon img{
+    width: 15px; height: 15px;
+  }
+  .hero .hero-text .log-in p{
+    font-size: 30px !important;
+  }
+
+  .participation{
+    display: none;
+  }
+
+/* 하단 박스 영역 */
+  .box-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    position: relative;
+    margin-top: 60px;
+  }
+  .box-wrap::after{
+    display: none;
+  }
+  .box-wrap::before{
+    content: '';
+    position: absolute;
+    left: -30px;
+    right: -30px;
+    top: 0;
+    bottom: 0;
+    background: var(--color-bg-light);
+    z-index: -1;
+  }
+  .box-bg{
+    background: transparent;
+    height: auto;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center; 
+  }
+  .box-bg ul{
+    width: auto;
+  }
+  .box-bg:first-child ul li:nth-child(2){
+  margin-left: 0px;
+}
+.box-bg:first-of-type ul{
+  margin: auto;
+}
+
+/* FAQ */
+  .FAQ-search{
+  display: none;
+  }
+  .FAQ-search-mobile{
+    display: block;
+    display: flex;
+    justify-content: center;
+    background: var(--color-bg-light);
+    margin-top: 25px;
+    padding: 20px;
+  }
+  .FAQ-search-mobile input{
+    width: 300px; height: 35px;
+    border: 1.5px solid var(--color-bg-middle-dark);
+    padding: 0 10px;
+  }
+  .FAQ-search-mobile input:focus{
+    outline: none;
+  }
+  .FAQ-search-mobile button{
+    background: var(--color-primary);
+    color: var(--color-white);
+    border: none;
+    padding: 0 20px;
+    font-size: 18px;
+    line-height: 1;
+    margin-left: 10px;
+  }
+
+  .FAQ-accordion-header{
+    height: 120px;
+    border-radius: 80px;
+  }
+  .FAQ-accordion-header span{
+    top: 50%; left: 18px;
+    width: 70px; height: 70px;
+    line-height: 70px;
+    font-size: 42px;
+    transform: translateY(-50%); 
+  }
+  .FAQ-accordion-title h4{
+    font-size: 18px;
+  }
+  .FAQ-accordion-title p{
+    font-size: 14px;
+    width: 250px;
+  }
+  .FAQ-accordion-item.active .FAQ-accordion-content{
+    max-height: 1000px;
+  }
+
+  .arrow-double-left{
+    width: 30px; height: 30px;
+    background-size: 13px;
+  }
+  .arrow-left{
+    width: 30px; height: 30px;
+    background-size: 7.5px;
+  }
+  #numbers li{
+    width: 30px; height: 30px;
+    line-height: 30px;
+    font-size: 13px;
+  }
+  .arrow-double-right{
+    width: 30px; height: 30px;
+    background-size: 13px;
+  }
+  .arrow-right{
+    width: 30px; height: 30px;
+    background-size: 7.5px;
+  }
+  .pagination{
+    margin-top: 45px;
+  }
+}

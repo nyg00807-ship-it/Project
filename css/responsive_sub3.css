@@ -1,0 +1,120 @@
+@media screen and (max-width:728px){
+  header{height: 350px;}
+
+  .hero-wrap{
+    height: 350px;
+    position: relative;
+    width: 100%;
+    border-radius: 0;
+  }
+  .hero .hero-text{
+    width: 100%;
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%,0%);
+  }
+  .hero .hero-text .Top-icon p{
+    font-size: 16px;
+    display: flex;
+    align-self: center;
+    color: var(--color-white);
+    margin: 0;
+    padding: 0 0 0 20px;
+    text-shadow: 0 0 10px black;
+  }
+  .Top-icon img{
+    width: 15px; height: 15px;
+  }
+  .hero .hero-text .log-in p{
+    font-size: 30px !important;
+  }
+  .Research{
+    margin-top: 60px;
+  }
+
+/* 하단 박스 영역 */
+.box-wrap{
+  position: relative;
+  margin-top: 60px;
+}
+.box-wrap::after{
+  display: none;
+}
+.box-wrap::before{
+  content: '';
+  position: absolute;
+  left: -30px;
+  right: -30px;
+  top: 0;
+  bottom: 0;
+  background: var(--color-bg-light);
+  z-index: -1;
+}
+.box-bg{
+  background: transparent;
+  height: auto;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center; 
+}
+.box-bg ul{
+  width: auto;
+}
+
+  .knowledge{
+    display: none;
+  }
+  .result-pdf{
+    display: none;
+  }
+  .result-pdf-mobile{
+    display: block;
+    padding: 30px;
+    background: var(--color-bg-light);
+    display: flex;
+    justify-content: center;
+  }
+  .result-pdf-mobile p{
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--color-bg-middle-dark);
+    margin-right: 10px;
+  }
+  .result-pdf-mobile button{
+    position: relative;
+    border: none;
+    padding: 6px 7px;
+    padding-left: 27px;
+    background: var(--color-white);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+    border-radius: 3px;
+    color: var(--color-bg-middle-dark);
+    font-size: 15px;
+    font-weight: 700;
+  }
+  .result-pdf-mobile button::after{
+    content: '';
+    position: absolute;
+    left: 7px; top: 50%;
+    transform: translateY(-50%);
+    width: 20px; height: 20px;
+    background: url(../icon/download_icon.svg) no-repeat;
+    background-size: cover;
+  }
+
+  /* 스와이퍼 */
+  .mySwiper2{
+    margin-top: 20px;
+    width: 100%; 
+    height: 280px;
+  }
+  .mySwiper2 .swiper-slide p{
+    font-size: 16px;
+  }
+  .mySwiper .swiper-slide{
+  }
+  .mySwiper .swiper-slide img{
+    height: 120px;
+  }
+  
+}

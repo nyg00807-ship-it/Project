@@ -1,0 +1,176 @@
+@media screen and (max-width:728px){
+  header{height: 350px;}
+
+  .hero-wrap{
+    height: 350px;
+    position: relative;
+    width: 100%;
+    border-radius: 0;
+  }
+  .hero .hero-text{
+    width: 100%;
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%,0%);
+  }
+  .hero .hero-text .Top-icon p{
+    font-size: 16px;
+    display: flex;
+    align-self: center;
+    color: var(--color-white);
+    margin: 0;
+    padding: 0 0 0 20px;
+    text-shadow: 0 0 10px black;
+  }
+  .Top-icon img{
+    width: 15px; height: 15px;
+  }
+  .hero .hero-text .log-in p{
+    font-size: 30px !important;
+  }
+
+  .notice{
+    display: none;
+  }
+
+/* 하단 박스 영역 */
+ .box-wrap{
+    position: relative;
+    margin-top: 60px;
+  }
+  .box-wrap::after{
+    display: none;
+  }
+  .box-wrap::before{
+    content: '';
+    position: absolute;
+    left: -30px;
+    right: -30px;
+    top: 0;
+    bottom: 0;
+    background: var(--color-bg-light);
+    z-index: -1;
+  }
+  .box-bg{
+    background: transparent;
+    height: auto;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center; 
+  }
+  .box-bg ul{
+    width: auto;
+  }
+
+/* 알림 */
+.notice-search{
+  width: 100%;
+}
+.search-content button{
+  display: none;
+}
+.search-mobile{
+  width: 100%;
+}
+.search-mobile button{
+  margin-top: 10px;
+  display: block;
+  width: 100%;
+  /* 자식의 넓이값이 부모를 넘었던 이유: 
+  margin은 부모 안으로 포함되지 않음 */
+}
+.search-mobile button:hover{
+  background: var(--color-bg-middle-dark);
+}
+.search-content input{
+  width: 260px;
+}
+
+  .arrow-double-left{
+    width: 30px; height: 30px;
+    background-size: 13px;
+  }
+  .arrow-left{
+    width: 30px; height: 30px;
+    background-size: 7.5px;
+  }
+  #numbers li{
+    width: 30px; height: 30px;
+    line-height: 30px;
+    font-size: 13px;
+  }
+  .arrow-double-right{
+    width: 30px; height: 30px;
+    background-size: 13px;
+  }
+  .arrow-right{
+    width: 30px; height: 30px;
+    background-size: 7.5px;
+  }
+  .pagination{
+    margin-top: 45px;
+  }
+
+/* 공지사항 */
+  .notice-table thead {
+    display: none;
+  }
+  .notice-table,
+  .notice-table tbody,
+  .notice-table tr,
+  .notice-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .notice-table tr:hover{
+    background: transparent;
+  }
+  .notice-table tr {
+    border-bottom: none;
+    padding: 0;
+  }
+  .notice-table td::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 85px; height: 100%;
+    background: var(--color-bg-light);
+    z-index: -1;
+  }
+  .notice-table tbody tr:nth-child(even) td::after {
+    z-index: -1;
+    background: #BFEBE9;
+  }
+  .notice-table tbody tr:nth-child(even){
+    background: #F8F8F8;
+  }
+
+  .notice-table td {
+    position: relative;
+    display: flex;
+    gap: 40px;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0;
+    text-align: left;
+    border: none;
+    height: 50px;
+    z-index: 5;
+  }
+
+  .notice-table td::before {
+    content: attr(data-label);
+    /* data-label : 라벨 텍스트 저장 */
+    /* attr() : 그 값을 읽어옴 */
+    width: 65px;
+    font-weight: 600;
+    color: #000;
+    flex-shrink: 0;
+    text-align: right;
+  }
+
+  .notice-title {
+    white-space: normal;
+  }
+}
