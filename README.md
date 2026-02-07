@@ -2,7 +2,7 @@
 
 | Before | After |
 |------|------|
-| <img src="https://github.com/user-attachments/assets/9509e1be-9714-4884-95a3-5728c5d5de67" width="420" /> | <img src="https://github.com/user-attachments/assets/1e91e842-b781-4929-bbdc-c8864c06cae4" width="420"/> |
+| <img width="1920" height="2862" alt="Image" src="https://github.com/user-attachments/assets/f74c3c74-32c4-4026-a8e6-ebca7c82ee44" /> | <img src="https://github.com/user-attachments/assets/1e91e842-b781-4929-bbdc-c8864c06cae4" width="420"/> |
 
 <br><br>
 
